@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import java.net.URL?>
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+<VBox fx:id="vbox" alignment="center" nodeOrientation="RIGHT_TO_LEFT" style="-fx-background-color: red;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller">
     <stylesheets>
-        <URL value="@/sample/style.css"/>
+        <URL value="@/sample/style.css" />
     </stylesheets>
-<top>
-    <MenuBar>
-        <Menu text="File">
-            <MenuItem text ="Open"/>
-            <MenuItem text ="Save"/>
-            <MenuItem text ="Close"/>
-        </Menu>
-    </MenuBar>
-</top>
-    <center>
-        <Slider fx:id="slider" min="0" max="100" showTickLabels="true" showTickMarks="true"/>
-    </center>
-    <bottom>
-<HBox>
-    <Button text="button1"/>
-    <Button text="button2"/>
-    <Button text="button3"/>
-    <Label text="Кнопки"/>
-</HBox>
-    </bottom>
-</BorderPane>
+<Button fx:id="btnHello" contentDisplay="TOP" onAction="#onClickBtnHello" text="add a button" textOverrun="CENTER_ELLIPSIS" />
+</VBox>
