@@ -1,0 +1,15 @@
+.Label {
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+#textfieldsms {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+
+}
+#textareasms {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+
+}

@@ -4,9 +4,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox fx:id="vbox" alignment="center" nodeOrientation="RIGHT_TO_LEFT" style="-fx-background-color: red;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller">
-    <stylesheets>
-        <URL value="@/sample/style.css" />
-    </stylesheets>
-<Button fx:id="btnHello" contentDisplay="TOP" onAction="#onClickBtnHello" text="add a button" textOverrun="CENTER_ELLIPSIS" />
-</VBox>
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <stylesheets>
+      <URL value="@/sample/style.css" />
+  </stylesheets>
+
+      <Label styleClass="Label" text="Желаем Вам продуктивного общения" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="2.0" />
+      <TextArea fx:id="textareasms" layoutX="47.0" layoutY="33.0" prefHeight="400.0" prefWidth="691.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="33.0" />
+      <TextField fx:id="textfieldsms" layoutX="20.0" layoutY="300.0" prefHeight="25.0" prefWidth="419.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="550.0" />
+      <Label fx:id="editMess" layoutX="20.0" layoutY="462.0" prefHeight="17.0" prefWidth="161.0" styleClass="Label" text="Ваше сообщение:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="520.0" />
+      <Button layoutX="449.0" layoutY="490.0" mnemonicParsing="false" onAction="#sendMassageClick" text="Отправить" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="550.0" />
+      <Button layoutX="528.0" layoutY="490.0" mnemonicParsing="false" onAction="#clearChat" prefHeight="25.0" prefWidth="100.0" text="Очистить чат" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="550.0" />
+   <TextField fx:id="nameuser" layoutX="117.0" layoutY="455.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="480.0" />
+   <Label layoutX="40.0" layoutY="457.0" styleClass="Label" text="Ваше имя" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="480.0" />
+   <Button mnemonicParsing="false" onAction="#buttonClose" text="Закрыть" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="550.0" />
+
+
+</AnchorPane>
